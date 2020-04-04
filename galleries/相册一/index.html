@@ -6,10 +6,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="林雨晖 桂林理工大学 物联网工程 人像摄影 单簧管、箫爱好者，GLUT管弦乐队成员">
+    <meta name="keywords" content="相册1, 林雨晖 桂林理工大学 物联网工程 人像摄影 单簧管、箫爱好者，GLUT管弦乐队成员">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="林雨晖的小站">
+    <meta name="description" content="相册1 | 林雨晖的小站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>林雨晖的小站</title>
+    <title>相册1 | 林雨晖的小站</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -446,351 +446,196 @@
 
 </header>
 
-        
+        <link rel="stylesheet" href="/css/gallery.css">
 
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color:rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
+<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/justifiedGallery/3.7.0/css/justifiedGallery.min.css">
 
 
 
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-    <div id="prev-cover" class="left waves-effect carousel-control">
-        <i class="icon fa fa-angle-left"></i>
-    </div>
-    <div id="next-cover" class="right waves-effect carousel-control">
-        <i class="icon fa fa-angle-right"></i>
-    </div>
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                <!-- 
-                    林雨晖的小站
-                 -->
-                
-                    林雨晖的小站
-                
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        相册1
+                    </div>
+                </div>
             </div>
-
-            <div class="description center-align">
-                
-                    <!-- 林雨晖的小站 桂林理工大学 物联网工程 人像摄影 单簧管、箫爱好者，GLUT管弦乐队成员 -->
-                    <span id="jinrishici-sentence">正在加载今日诗词...</span>
-                
-            </div>
-            
-            
         </div>
     </div>
 </div>
-<script>
-// 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
-</script>
 
 
 
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
+<!--   "  <p class=\"photo-name\">" + photo + "</p>\n" +
+文件名先注释掉  -->
 
-                
-            </div>
-            <div class="cover-social-link">
-
- 
-    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=lin.yuhui@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fa fa-envelope-open"></i>
+<!-- 不加密写法 -->
+<!-- <div class="container">
+    <div class="photo-wrapper">
+        <div class="waterfall" id="mygallery">
+            <a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_101.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_101.jpg"
+       alt=背景图片/bg_pic_101.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_102.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_102.jpg"
+       alt=背景图片/bg_pic_102.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_103.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_103.jpg"
+       alt=背景图片/bg_pic_103.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_104.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_104.jpg"
+       alt=背景图片/bg_pic_104.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_105.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_105.jpg"
+       alt=背景图片/bg_pic_105.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_106.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_106.jpg"
+       alt=背景图片/bg_pic_106.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_107.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_107.jpg"
+       alt=背景图片/bg_pic_107.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_108.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_108.jpg"
+       alt=背景图片/bg_pic_108.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_109.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_109.jpg"
+       alt=背景图片/bg_pic_109.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_110.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_110.jpg"
+       alt=背景图片/bg_pic_110.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_111.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_111.jpg"
+       alt=背景图片/bg_pic_111.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_112.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_112.jpg"
+       alt=背景图片/bg_pic_112.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_113.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_113.jpg"
+       alt=背景图片/bg_pic_113.jpg>
     </a>
+        </div>
+    </div>
+</div> -->
 
 
-
-
-
-
-    <a href="http://wpa.qq.com/msgrd?v=3&uin=315281082&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
-        <i class="fa fa-qq"></i>
+<!-- 加密写法 -->
+<div class="container">
+    <div class="photo-wrapper">
+        
+            <div class="waterfall" id="encrypt-blog">
+                <a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_101.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_101.jpg"
+       alt=背景图片/bg_pic_101.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_102.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_102.jpg"
+       alt=背景图片/bg_pic_102.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_103.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_103.jpg"
+       alt=背景图片/bg_pic_103.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_104.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_104.jpg"
+       alt=背景图片/bg_pic_104.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_105.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_105.jpg"
+       alt=背景图片/bg_pic_105.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_106.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_106.jpg"
+       alt=背景图片/bg_pic_106.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_107.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_107.jpg"
+       alt=背景图片/bg_pic_107.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_108.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_108.jpg"
+       alt=背景图片/bg_pic_108.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_109.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_109.jpg"
+       alt=背景图片/bg_pic_109.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_110.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_110.jpg"
+       alt=背景图片/bg_pic_110.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_111.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_111.jpg"
+       alt=背景图片/bg_pic_111.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_112.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_112.jpg"
+       alt=背景图片/bg_pic_112.jpg>
+    </a><a href="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery/背景图片/bg_pic_113.jpg"
+     class="photo-item" rel="example_group"
+     data-fancybox="images">
+      <img src="https://raw.githubusercontent.com/shw2018/Gallery/master/gallery_tiny/背景图片/bg_pic_113.jpg"
+       alt=背景图片/bg_pic_113.jpg>
     </a>
-
-
-
-
-</div>
-        </div>
-    </div>
-
-    
-    
-
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/banner/0.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">开站之后的感言</div>
-                    <div class="description center-align">
-                    
-                        倒腾了一个多月把个人网站搭起来了，目前这个版本已经可以使用（但估计还存在隐藏BUG），当然还有一些可以继续优化的地方以及功能的增加还有待继续。 该网站采用了hexo+github的架构搭建，考虑到访问速度的问题，我使用了这个lyhzone.com的国际域名及部署了一台阿里云的服务器。 最后，希望你能访问愉快，出现问题请直接联系我，十分感谢！ tips： 由于网站图片过多，初次加载可能会持续10-30S
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2020/03/24/open/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
             </div>
-        </div>
+        
     </div>
-    
-    
 </div>
+
+<script src="/libs/lazyload/jquery.lazyload.js"></script>
+<script src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
 
 <script>
-$(function () {
-    let coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
+  // $(".waterfall").lazyload();
 
-    let carouselIntervalId;
-    
-    // Loop to call the next cover article picture.
-    let autoCarousel = function() {
-        carouselIntervalId = setInterval(function () {
-            coverSlider.carousel('next');
-        }, 300000);
-    };
-    autoCarousel();
-    
+$("a[rel=example_group]").fancybox();
+//  不加密写法
+// $("#mygallery").justifiedGallery({margins: 5, rowHeight: 150});
+$("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});
 
-    let restartPlay = function () {
-        
-        clearInterval(carouselIntervalId);
-        autoCarousel();
-        
-    };
-
-    
-    // prev and next cover post.
-    $('#prev-cover').click(function () {
-        coverSlider.carousel('prev');
-        restartPlay();
-    });
-    $('#next-cover').click(function () {
-        coverSlider.carousel('next');
-        restartPlay();
-    });
-    
-});
 </script>
-
-
-
-<main class="content">
-
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                    
-                    
-
-
-<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<div class="music-player">
-    
-    <div class="row">
-        
-        
-        <div class="col s12 ">
-            <div id="aplayer" class="music"></div>
-        </div>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script>
-    $(function () {
-        new APlayer({
-            container: document.getElementById('aplayer'),
-            fixed: 'false' === 'true',
-            autoplay: 'false' === 'true',
-            theme: '#542674',
-            loop: 'all',
-            order: 'list',
-            preload: 'auto',
-            volume: Number('0.7'),
-            listFolded: 'false' === 'true',
-            listMaxHeight: '197px',
-            audio: JSON.parse('[{"name":"little star","artist":"Citrusss","url":"http://music.163.com/song/media/outer/url?id=1407524353.mp3","cover":"http://p1.music.126.net/AFp90ntV1KLEZQCGbNglpQ==/109951164527338288.jpg?param=130y130"},{"name":"三日月の舞 (麗奈 トランペットソロ Ver.)","artist":"松田彬人/堀川奈美恵","url":"https://sharefs.yun.kugou.com/202004040046/1d26ec79ee29702f3dc6f63d1f2dd924/G030/M03/01/00/_pMEAFXp23OAGryQAGPgkGYoAmw830.mp3","cover":"http://pic.xiami.net/images/album/img35/92935/2351416901436175350.jpg?x-oss-process=image/resize,limit_0,m_fill,s_410/quality,q_80/format,jpg"},{"name":"君の知らない物語","artist":"supercell","url":"http://music.163.com/song/media/outer/url?id=399367218.mp3","cover":"http://p2.music.126.net/YzW9gUbbMC8V4jJLdLCYvA==/109951163641189935.jpg?param=130y130"},{"name":"走出非洲:A大调单簧管协奏曲/莫扎特","artist":"Peter Maag / London Symphony Orchestra / Gervase de Peyer","url":"http://music.163.com/song/media/outer/url?id=25892492.mp3","cover":"http://p2.music.126.net/3hhMuyrAB_jWKkFFuVQReg==/2406830953254373.jpg?param=130y130"},{"name":"空顶之光","artist":"王弢","url":"http://music.163.com/song/media/outer/url?id=166444.mp3","cover":"http://p2.music.126.net/KknQFhnr2RynejhjLiMwUg==/96757023256143.jpg?param=130y130"},{"name":"西西里舞曲 Sicilienne Op78","artist":"Fauré, Gabriel","url":"http://music.163.com/song/media/outer/url?id=5273557.mp3","cover":"http://p1.music.126.net/r2aGH4aHrWLx_RGfDe14ow==/45079976755951.jpg?param=130y130"},{"name":"e小调第九交响曲《自新大陆》·第四乐章","artist":"德沃夏克","url":"http://music.163.com/song/media/outer/url?id=33638486.mp3","cover":"http://p2.music.126.net/b15zXyE6GKH46drWnJFM9g==/7706477001295487.jpg?param=130y130"},{"name":"The Slopes of the Blessure","artist":"Piotr Musial","url":"http://music.163.com/song/media/outer/url?id=416011555.mp3","cover":"http://p1.music.126.net/Db6nMmNMZxi4U-KYlq4wmg==/3402988490328806.jpg?param=130y130"}]')
-        });
-    });
-</script>
-                    
-                    
-                    
-                    
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-
-
-<div class="title"><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;推荐文章</div>
-
-<div class="row">
-
-    
-    
-    <div class="col s12" >
-        <div class="post-card" style="background-image: url('/medias/banner/2.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/categories/网站开发/" class="category" target="_blank">网站开发</a>
-                    
-                </div>
-                <a href="/2020/03/24/open/" target="_blank">
-                    <h3 class="post-title">开站之后的感言</h3>
-                </a>
-                <p class="post-description">倒腾了一个多月把个人网站搭起来了，目前这个版本已经可以使用（但估计还存在隐藏BUG），当然还有一些可以继续优化的地方以及功能的增加还有待继续。 该网站采用了hexo+github的架构搭建，考虑到访问速度的问题，我使用了这个lyhzone.com的国际域名及部署了一台阿里云的服务器。 最后，希望你能访问愉快，出现问题请直接联系我，十分感谢！ tips： 由于网站图片过多，初次加载可能会持续10-30S</p>
-                <a href="/2020/03/24/open/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-
-</div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/03/24/open/" target="_blank">
-                        <div class="card-image">
-                            
-                            <img src="/medias/banner/2.jpg" class="responsive-img" alt="开站之后的感言">
-                            
-                            <span class="card-title">开站之后的感言</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            倒腾了一个多月把个人网站搭起来了，目前这个版本已经可以使用（但估计还存在隐藏BUG），当然还有一些可以继续优化的地方以及功能的增加还有待继续。 该网站采用了hexo+github的架构搭建，考虑到访问速度的问题，我使用了这个lyhzone.com的国际域名及部署了一台阿里云的服务器。 最后，希望你能访问愉快，出现问题请直接联系我，十分感谢！ tips： 由于网站图片过多，初次加载可能会持续10-30S
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/网站开发/" class="post-category" target="_blank">
-                                    网站开发
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Hexo/" target="_blank">
-                            <span class="chip bg-color">Hexo</span>
-                        </a>
-                        
-                        <a href="/tags/Github/" target="_blank">
-                            <span class="chip bg-color">Github</span>
-                        </a>
-                        
-                        <a href="/tags/博客/" target="_blank">
-                            <span class="chip bg-color">博客</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
 
         <footer class="page-footer bg-color">
     <div class="container row center-align">
