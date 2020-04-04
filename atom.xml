@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>林雨晖的小站</title>
+  <title>雨晖の小站</title>
   
   <subtitle>雨晖の小站</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lyhzone.com/"/>
-  <updated>2020-04-03T14:34:28.031Z</updated>
+  <updated>2020-04-04T17:22:13.224Z</updated>
   <id>https://lyhzone.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lyhzone.com/2020/03/24/open/"/>
     <id>https://lyhzone.com/2020/03/24/open/</id>
     <published>2020-03-23T20:41:03.000Z</published>
-    <updated>2020-04-03T14:34:28.031Z</updated>
+    <updated>2020-04-04T17:22:13.224Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;h1 id=&quot;简短介绍&quot;&gt;&lt;a href=&quot;#简短介绍&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;简短介绍&quot;&gt;&lt;a href=&quot;#简短介绍&quot; class=&quot;headerlink&quot; title=&quot;简短介绍&quot;&gt;&lt;/a&gt;简短介绍&lt;/h1&gt;&lt;p&gt;在这个long long long
         
       
     
