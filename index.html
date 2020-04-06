@@ -528,7 +528,7 @@
 </div>
 <script>
 // 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + Math.floor(Math.random()*5+1 ) + '.jpg)');
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + Math.floor(Math.random()*4+0 ) + '.jpg)');
 </script>
 
 
@@ -576,7 +576,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + Math.floor(Math.r
                     <div class="title center-align">开站之后的感言</div>
                     <div class="description center-align">
                     
-                        个人网站的搭建倒腾了一个多月终于完工了，之后还会继续优化一些地方以及增加功能。 该网站采用了hexo+github的架构搭建，估计还存在隐藏BUG 希望你能访问愉快，如果出现问题直接联系我，十分感谢。 tips： 由于网站图片过多，初次加载可能会持续10-15S
+                        个人网站倒腾了一个多月终于完工了，之后还会继续优化一些地方以及增加功能。 该网站采用了基于node.js的hexo+github的架构搭建，但估计还存在隐藏BUG。 So希望你能访问愉快，出现BUG直接联系我！十分感谢！ tips： 由于网站图片过多，初次加载可能会持续10-15S
                     
                     </div>
                     <div class="cover-btns">
@@ -673,7 +673,7 @@ $(function () {
             volume: Number('0.7'),
             listFolded: 'false' === 'true',
             listMaxHeight: '197px',
-            audio: JSON.parse('[{"name":"little star","artist":"Citrusss","url":"http://music.163.com/song/media/outer/url?id=1407524353.mp3","cover":"http://p1.music.126.net/AFp90ntV1KLEZQCGbNglpQ==/109951164527338288.jpg?param=130y130"},{"name":"三日月の舞 (麗奈 トランペットソロ Ver.)","artist":"松田彬人/堀川奈美恵","url":"https://sharefs.yun.kugou.com/202004040046/1d26ec79ee29702f3dc6f63d1f2dd924/G030/M03/01/00/_pMEAFXp23OAGryQAGPgkGYoAmw830.mp3","cover":"http://pic.xiami.net/images/album/img35/92935/2351416901436175350.jpg?x-oss-process=image/resize,limit_0,m_fill,s_410/quality,q_80/format,jpg"},{"name":"君の知らない物語","artist":"supercell","url":"http://music.163.com/song/media/outer/url?id=399367218.mp3","cover":"http://p2.music.126.net/YzW9gUbbMC8V4jJLdLCYvA==/109951163641189935.jpg?param=130y130"},{"name":"走出非洲:A大调单簧管协奏曲/莫扎特","artist":"Peter Maag / London Symphony Orchestra / Gervase de Peyer","url":"http://music.163.com/song/media/outer/url?id=25892492.mp3","cover":"http://p2.music.126.net/3hhMuyrAB_jWKkFFuVQReg==/2406830953254373.jpg?param=130y130"},{"name":"空顶之光","artist":"王弢","url":"http://music.163.com/song/media/outer/url?id=166444.mp3","cover":"http://p2.music.126.net/KknQFhnr2RynejhjLiMwUg==/96757023256143.jpg?param=130y130"},{"name":"西西里舞曲 Sicilienne Op78","artist":"Fauré, Gabriel","url":"http://music.163.com/song/media/outer/url?id=5273557.mp3","cover":"http://p1.music.126.net/r2aGH4aHrWLx_RGfDe14ow==/45079976755951.jpg?param=130y130"},{"name":"e小调第九交响曲《自新大陆》·第四乐章","artist":"德沃夏克","url":"http://music.163.com/song/media/outer/url?id=33638486.mp3","cover":"http://p2.music.126.net/b15zXyE6GKH46drWnJFM9g==/7706477001295487.jpg?param=130y130"},{"name":"The Slopes of the Blessure","artist":"Piotr Musial","url":"http://music.163.com/song/media/outer/url?id=416011555.mp3","cover":"http://p1.music.126.net/Db6nMmNMZxi4U-KYlq4wmg==/3402988490328806.jpg?param=130y130"}]')
+            audio: JSON.parse('[{"name":"little star","artist":"Citrusss","url":"http://music.163.com/song/media/outer/url?id=1407524353.mp3","cover":"http://p1.music.126.net/AFp90ntV1KLEZQCGbNglpQ==/109951164527338288.jpg?param=130y130"},{"name":"三日月の舞 (麗奈 トランペットソロ Ver.)","artist":"松田彬人/堀川奈美恵","url":"http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_13644045&response=res&type=convert_url&","cover":"http://pic.xiami.net/images/album/img35/92935/2351416901436175350.jpg?x-oss-process=image/resize,limit_0,m_fill,s_410/quality,q_80/format,jpg"},{"name":"君の知らない物語","artist":"supercell","url":"http://music.163.com/song/media/outer/url?id=399367218.mp3","cover":"http://p2.music.126.net/YzW9gUbbMC8V4jJLdLCYvA==/109951163641189935.jpg?param=130y130"},{"name":"走出非洲:A大调单簧管协奏曲/莫扎特","artist":"Peter Maag / London Symphony Orchestra / Gervase de Peyer","url":"http://music.163.com/song/media/outer/url?id=25892492.mp3","cover":"http://p2.music.126.net/3hhMuyrAB_jWKkFFuVQReg==/2406830953254373.jpg?param=130y130"},{"name":"空顶之光","artist":"王弢","url":"http://music.163.com/song/media/outer/url?id=166444.mp3","cover":"http://p2.music.126.net/KknQFhnr2RynejhjLiMwUg==/96757023256143.jpg?param=130y130"},{"name":"西西里舞曲 Sicilienne Op78","artist":"Fauré, Gabriel","url":"http://music.163.com/song/media/outer/url?id=5273557.mp3","cover":"http://p1.music.126.net/r2aGH4aHrWLx_RGfDe14ow==/45079976755951.jpg?param=130y130"},{"name":"e小调第九交响曲《自新大陆》·第四乐章","artist":"德沃夏克","url":"http://music.163.com/song/media/outer/url?id=33638486.mp3","cover":"http://p2.music.126.net/b15zXyE6GKH46drWnJFM9g==/7706477001295487.jpg?param=130y130"},{"name":"The Slopes of the Blessure","artist":"Piotr Musial","url":"http://music.163.com/song/media/outer/url?id=416011555.mp3","cover":"http://p1.music.126.net/Db6nMmNMZxi4U-KYlq4wmg==/3402988490328806.jpg?param=130y130"}]')
         });
     });
 </script>
@@ -706,7 +706,7 @@ $(function () {
                 <a href="/2020/03/24/open/" target="_blank">
                     <h3 class="post-title">开站之后的感言</h3>
                 </a>
-                <p class="post-description">个人网站的搭建倒腾了一个多月终于完工了，之后还会继续优化一些地方以及增加功能。 该网站采用了hexo+github的架构搭建，估计还存在隐藏BUG 希望你能访问愉快，如果出现问题直接联系我，十分感谢。 tips： 由于网站图片过多，初次加载可能会持续10-15S</p>
+                <p class="post-description">个人网站倒腾了一个多月终于完工了，之后还会继续优化一些地方以及增加功能。 该网站采用了基于node.js的hexo+github的架构搭建，但估计还存在隐藏BUG。 So希望你能访问愉快，出现BUG直接联系我！十分感谢！ tips： 由于网站图片过多，初次加载可能会持续10-15S</p>
                 <a href="/2020/03/24/open/" target="_blank"
                         class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
@@ -746,7 +746,7 @@ $(function () {
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            个人网站的搭建倒腾了一个多月终于完工了，之后还会继续优化一些地方以及增加功能。 该网站采用了hexo+github的架构搭建，估计还存在隐藏BUG 希望你能访问愉快，如果出现问题直接联系我，十分感谢。 tips： 由于网站图片过多，初次加载可能会持续10-15S
+                            个人网站倒腾了一个多月终于完工了，之后还会继续优化一些地方以及增加功能。 该网站采用了基于node.js的hexo+github的架构搭建，但估计还存在隐藏BUG。 So希望你能访问愉快，出现BUG直接联系我！十分感谢！ tips： 由于网站图片过多，初次加载可能会持续10-15S
                             
                         </div>
                         <div class="publish-info">
@@ -820,7 +820,7 @@ $(function () {
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">647</span> 字
+                <span class="white-color">661</span> 字
             
 
             

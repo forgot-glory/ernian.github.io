@@ -107,7 +107,7 @@ $(function () {
             selector: '.img-item',
             // 启用字幕
             subHtmlSelectorRelative: true,
-            showThumbByDefault: false  //2018.08.14
+            showThumbByDefault: false  //2020.03.14
         });
 
         /*网站加载逻辑问题 网站加载逻辑问题：图片最后加载 */
