@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lyhzone.com/galleries/COS/index.html</loc>
+    
+    <lastmod>2020-04-19T10:08:53.218Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lyhzone.com/galleries/%E6%B1%89%E6%9C%8D/index.html</loc>
+    
+    <lastmod>2020-04-19T10:08:42.339Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lyhzone.com/2020/03/24/open/</loc>
     
     <lastmod>2020-04-06T09:53:09.497Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>https://lyhzone.com/Scenery/index.html</loc>
     
     <lastmod>2020-04-04T16:23:54.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lyhzone.com/galleries/%E7%9B%B8%E5%86%8C%E4%B8%80/index.html</loc>
-    
-    <lastmod>2020-04-04T13:35:04.133Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lyhzone.com/galleries/%E7%9B%B8%E5%86%8C%E4%BA%8C/index.html</loc>
-    
-    <lastmod>2020-04-04T13:34:50.804Z</lastmod>
     
   </url>
   
@@ -58,6 +58,13 @@
   </url>
   
   <url>
+    <loc>https://lyhzone.com/contact/index.html</loc>
+    
+    <lastmod>2019-10-04T03:57:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lyhzone.com/categories/index.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
@@ -66,13 +73,6 @@
   
   <url>
     <loc>https://lyhzone.com/friends/index.html</loc>
-    
-    <lastmod>2019-10-04T03:57:55.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lyhzone.com/contact/index.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
     
