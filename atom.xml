@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lyhzone.com/"/>
-  <updated>2020-04-19T18:18:43.209Z</updated>
+  <updated>2020-04-22T07:14:14.985Z</updated>
   <id>https://lyhzone.com/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用CDN与云存储加速网站静态资源读取的方法</title>
+    <link href="https://lyhzone.com/2020/04/22/cdn/"/>
+    <id>https://lyhzone.com/2020/04/22/cdn/</id>
+    <published>2020-04-22T04:08:13.000Z</published>
+    <updated>2020-04-22T07:14:14.985Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;CDN&quot;&gt;&lt;a href=&quot;#CDN&quot; class=&quot;headerlink&quot; title=&quot;CDN&quot;&gt;&lt;/a&gt;CDN&lt;/h1&gt;&lt;p&gt;CDN的全称是Content Delivery
+        
+      
+    
+    </summary>
+    
+      <category term="web开发" scheme="https://lyhzone.com/categories/web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="web CDN 云存储" scheme="https://lyhzone.com/tags/web-CDN-%E4%BA%91%E5%AD%98%E5%82%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最现代的Java IDE——IntelliJ IDEA使用入门</title>
+    <link href="https://lyhzone.com/2020/04/21/idea/"/>
+    <id>https://lyhzone.com/2020/04/21/idea/</id>
+    <published>2020-04-21T07:02:43.000Z</published>
+    <updated>2020-04-22T07:13:17.846Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软件程序" scheme="https://lyhzone.com/categories/%E8%BD%AF%E4%BB%B6%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="eclipse" scheme="https://lyhzone.com/tags/eclipse/"/>
+    
+      <category term="IDEA" scheme="https://lyhzone.com/tags/IDEA/"/>
+    
+      <category term="IDE" scheme="https://lyhzone.com/tags/IDE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>开站之后的感言</title>
     <link href="https://lyhzone.com/2020/03/24/open/"/>
     <id>https://lyhzone.com/2020/03/24/open/</id>
     <published>2020-03-23T20:41:03.000Z</published>
-    <updated>2020-04-19T18:18:43.209Z</updated>
+    <updated>2020-04-22T07:18:04.193Z</updated>
     
     <summary type="html">
     
