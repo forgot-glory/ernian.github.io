@@ -13,14 +13,18 @@
       
       <categories>
           
-          <category> web开发 </category>
+          <category> JAVAWEB </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Javaweb webapp tomcat </tag>
+            <tag> Javaweb </tag>
+            
+            <tag> webapp </tag>
+            
+            <tag> tomcat </tag>
             
         </tags>
       
@@ -45,7 +49,11 @@
       
         <tags>
             
-            <tag> web CDN 云存储 </tag>
+            <tag> web </tag>
+            
+            <tag> CDN </tag>
+            
+            <tag> 云存储 </tag>
             
         </tags>
       
@@ -92,7 +100,7 @@
       
       <categories>
           
-          <category> 网站开发 </category>
+          <category> web开发 </category>
           
       </categories>
       

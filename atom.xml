@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lyhzone.com/"/>
-  <updated>2020-04-24T12:21:59.301Z</updated>
+  <updated>2020-04-24T13:45:17.018Z</updated>
   <id>https://lyhzone.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lyhzone.com/2020/04/24/tomcat/"/>
     <id>https://lyhzone.com/2020/04/24/tomcat/</id>
     <published>2020-04-24T12:11:05.000Z</published>
-    <updated>2020-04-24T12:21:59.301Z</updated>
+    <updated>2020-04-24T13:45:17.018Z</updated>
     
     <summary type="html">
     
@@ -36,10 +36,14 @@
     
     </summary>
     
-      <category term="web开发" scheme="https://lyhzone.com/categories/web%E5%BC%80%E5%8F%91/"/>
+      <category term="JAVAWEB" scheme="https://lyhzone.com/categories/JAVAWEB/"/>
     
     
-      <category term="Javaweb webapp tomcat" scheme="https://lyhzone.com/tags/Javaweb-webapp-tomcat/"/>
+      <category term="Javaweb" scheme="https://lyhzone.com/tags/Javaweb/"/>
+    
+      <category term="webapp" scheme="https://lyhzone.com/tags/webapp/"/>
+    
+      <category term="tomcat" scheme="https://lyhzone.com/tags/tomcat/"/>
     
   </entry>
   
@@ -48,7 +52,7 @@
     <link href="https://lyhzone.com/2020/04/22/cdn/"/>
     <id>https://lyhzone.com/2020/04/22/cdn/</id>
     <published>2020-04-22T04:08:13.000Z</published>
-    <updated>2020-04-22T07:50:23.180Z</updated>
+    <updated>2020-04-24T13:45:08.836Z</updated>
     
     <summary type="html">
     
@@ -65,7 +69,11 @@
       <category term="web开发" scheme="https://lyhzone.com/categories/web%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="web CDN 云存储" scheme="https://lyhzone.com/tags/web-CDN-%E4%BA%91%E5%AD%98%E5%82%A8/"/>
+      <category term="web" scheme="https://lyhzone.com/tags/web/"/>
+    
+      <category term="CDN" scheme="https://lyhzone.com/tags/CDN/"/>
+    
+      <category term="云存储" scheme="https://lyhzone.com/tags/%E4%BA%91%E5%AD%98%E5%82%A8/"/>
     
   </entry>
   
@@ -74,7 +82,7 @@
     <link href="https://lyhzone.com/2020/04/21/idea/"/>
     <id>https://lyhzone.com/2020/04/21/idea/</id>
     <published>2020-04-21T07:02:43.000Z</published>
-    <updated>2020-04-22T07:13:17.846Z</updated>
+    <updated>2020-04-24T13:45:18.999Z</updated>
     
     <summary type="html">
     
@@ -104,7 +112,7 @@
     <link href="https://lyhzone.com/2020/03/24/open/"/>
     <id>https://lyhzone.com/2020/03/24/open/</id>
     <published>2020-03-23T20:41:03.000Z</published>
-    <updated>2020-04-22T07:33:26.274Z</updated>
+    <updated>2020-04-24T13:44:54.362Z</updated>
     
     <summary type="html">
     
@@ -118,7 +126,7 @@
     
     </summary>
     
-      <category term="网站开发" scheme="https://lyhzone.com/categories/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
+      <category term="web开发" scheme="https://lyhzone.com/categories/web%E5%BC%80%E5%8F%91/"/>
     
     
       <category term="Hexo" scheme="https://lyhzone.com/tags/Hexo/"/>
