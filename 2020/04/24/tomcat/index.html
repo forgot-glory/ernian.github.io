@@ -6,10 +6,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="使用CDN与云存储加速网站静态资源读取的方法, 林雨晖 桂林理工大学 物联网工程 JAVA/后端 人像摄影">
+    <meta name="keywords" content="java web中tomcat在本地的函数式部署, 林雨晖 桂林理工大学 物联网工程 JAVA/后端 人像摄影">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="CDNCDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础">
+    <meta name="description" content="很多童鞋在开发应用程序的时候，对IDE的要求很高，而且喜欢折腾各种插件。
+以Java Web开发为例，大家都知道，开发Java Web程序，就是基于Servlet编程。从代码到部署，有4个步骤：
+
+编写Servlet
+打包为war文件
+复制">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +22,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>使用CDN与云存储加速网站静态资源读取的方法 | 雨晖の小站</title>
+    <title>java web中tomcat在本地的函数式部署 | 雨晖の小站</title>
     <link rel="icon" type="image/jpeg" href="http://cdn.lyhzone.com/medias/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -463,13 +468,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('http://cdn.lyhzone.com/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://cdn.lyhzone.com/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        使用CDN与云存储加速网站静态资源读取的方法
+                        java web中tomcat在本地的函数式部署
                     </div>
                 </div>
             </div>
@@ -581,8 +586,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/web-CDN-云存储/" target="_blank">
-                                <span class="chip bg-color">web CDN 云存储</span>
+                            <a href="/tags/Javaweb-webapp-tomcat/" target="_blank">
+                                <span class="chip bg-color">Javaweb webapp tomcat</span>
                             </a>
                         
                     </div>
@@ -605,7 +610,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-22
+                    2020-04-24
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -619,7 +624,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.4k
+                        1.1k
                     </div>
                     
 
@@ -643,94 +648,55 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h1><p>CDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络，CDN系统能够实时地根据网络流量和各节点的连接、负载状况以及到用户的距离和响应时间等综合信息将用户的请求重新导向离用户最近的服务节点上。其目的是使用户可就近取得所需内容，解决 Internet网络拥挤的状况，提高用户访问网站的响应速度。</p>
-<h1 id="用七牛云CDN加速你的网站"><a href="#用七牛云CDN加速你的网站" class="headerlink" title="用七牛云CDN加速你的网站"></a>用七牛云CDN加速你的网站</h1><h2 id="1-七牛云注册及使用"><a href="#1-七牛云注册及使用" class="headerlink" title="1.七牛云注册及使用"></a>1.七牛云注册及使用</h2><ul>
-<li><p>国内提供CDN加速的大厂有很多，阿里云、腾讯云、百度云、七牛云等等，我只试了<font color="orange">阿里云与七牛云</font>，其他可以自行测试。</p>
-</li>
-<li><p>七牛云是国内老牌的云加速服务提供商，也是对萌新比较友好的云服务提供商。</p>
-</li>
-<li><p>七牛云账户注册链接：<a href="https://portal.qiniu.com/signup?code=1hjikpp1nofv6" target="_blank" rel="noopener">官网</a></p>
-</li>
-<li><p>注册之后需要进行实名认证（正规的云服务提供商都需要的），认证需要一段时间</p>
-</li>
-<li><p>认证完成，登录，到主页后点击对象存储</p>
-</li>
-<li><p><img src="http://cdn.lyhzone.com/article_img/20200422154706.png" alt="对象存储"></p>
-</li>
-</ul>
-<p>填好自定义的存储空间名称，区域自选，选择公开空间，最后点击创建即可创建成功。</p>
+                <p>很多童鞋在开发应用程序的时候，对IDE的要求很高，而且喜欢折腾各种插件。</p>
+<p>以Java Web开发为例，大家都知道，开发Java Web程序，就是基于Servlet编程。从代码到部署，有4个步骤：</p>
 <ul>
-<li><img src="http://cdn.lyhzone.com/article_img/20200422154816.png" alt="创建存储空间"></li>
+<li>编写Servlet</li>
+<li>打包为war文件</li>
+<li>复制到Tomcat的webapps目录下</li>
+<li>启动Tomcat</li>
 </ul>
-<h2 id="2-绑定域名"><a href="#2-绑定域名" class="headerlink" title="2.绑定域名"></a>2.绑定域名</h2><p>空间创建好了，接下来需要给这个空间绑定域名，注意：<font color="orange">需要已备案的域名</font>。</p>
+<p>这个过程是不是很繁琐？如果我们想在IDE中断点调试，还需要打开Tomcat的远程调试端口并且连接上去。</p>
+<p>许多初学者经常卡在如何在IDE中启动Tomcat并加载webapp，更不要说断点调试了。老手对于配置插件、处理不同版本差异上估计也只能靠搜索解决。并且，在团队开发中，不同系统环境的差异带来的插件配置问题更多。</p>
+<p>所谓使用插件，无非就是我们在IDE中配置好了，由插件来自动完成上述任务。但是，越是复杂的任务，图形化的插件越不稳定。IDE中插件越多，他们之间互相冲突的概率也越大。</p>
+<p>我们不是反对使用插件，而是说，使用IDE和插件的时候，最好依赖IDE的核心功能，对于日常提升便捷性的任务，使用插件没有问题。</p>
+<p>还是以Java Web开发为例，如果要调试Web程序，是不是一定要启动Tomcat、配置webapp、打开远程调试呢？</p>
+<p>其实并不需要。IDE对于启动、调试通过main()方法的普通Java程序是极其可靠而且稳定的，因为它就是本地JVM，而远程调试，外加动态配置服务器，就不那么稳定，尤其是一旦某些地方配置出了问题，很难排查，白白把时间浪费在配置开发环境上。</p>
+<p>并且，在一台电脑上配置的这些经验可能换一台机器就不行了，在大公司有过大型项目开发经验的童鞋可以比赛一下搭建开发环境所需要的时间。</p>
+<p>因此，要提升开发效率，调试webapp，最好使用简单可靠，能像普通Java程序一样，直接在IDE中启动并调试webapp的方法。</p>
+<p>因为Tomcat实际上也是一个Java程序，我们看看Tomcat的启动流程：</p>
 <ul>
-<li><p>域名注册、申请、备案需要一个月以上的时间，请先备案域名再尝试搭建网站，否则网站会无法解析使用</p>
-</li>
-<li><p>在七牛云创建好存储空间后，七牛云会为这个空间创建一个“CNAME域名”，但这个域名不能直接用，需要用你自己给的域名映射到这个CNAME域名中才可以使用。</p>
-</li>
-<li><p>以我的空间为例：我已经有了一个备案过的顶级域名：<br><font color="orange">lyhzone.com</font>，<br>因此我使用二级域名<br><font color="orange">cdn.lyhzone.cn</font><br>作为我的加速域名。由于我的域名是在阿里云申请的，因此我到阿里云的域名管理界面，把<br><font color="orange">cdn.lyhzone.cn</font><br>绑定到已经申请的空间的<br><font color="orange">CNAME</font><br>上，就这样完成了映射。</p>
-</li>
+<li>启动JVM并执行Tomcat的main()方法；</li>
+<li>加载war并初始化Servlet；</li>
+<li>正常服务。</li>
 </ul>
-<p>访问流程是 cdn.lyhzone.cn —&gt; CNAME —&gt;lyhzone.com—&gt;IP。</p>
+<p>启动Tomcat无非就是设置好classpath并执行Tomcat某个jar包的main()方法，我们完全可以把Tomcat的jar包全部引入进来，然后自己编写一个main()方法，先启动Tomcat，然后让它加载我们的webapp就行。</p>
+<p>实际上，通过Maven引入Tomcat依赖后，我们可以编写一个main()方法，直接启动Tomcat服务器：</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// 启动Tomcat:</span>
+        Tomcat tomcat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Tomcat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        tomcat<span class="token punctuation">.</span><span class="token function">setPort</span><span class="token punctuation">(</span>Integer<span class="token punctuation">.</span><span class="token function">getInteger</span><span class="token punctuation">(</span><span class="token string">"port"</span><span class="token punctuation">,</span> <span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        tomcat<span class="token punctuation">.</span><span class="token function">getConnector</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 创建webapp:</span>
+        Context ctx <span class="token operator">=</span> tomcat<span class="token punctuation">.</span><span class="token function">addWebapp</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">"src/main/webapp"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getAbsolutePath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        WebResourceRoot resources <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StandardRoot</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        resources<span class="token punctuation">.</span><span class="token function">addPreResources</span><span class="token punctuation">(</span>
+                <span class="token keyword">new</span> <span class="token class-name">DirResourceSet</span><span class="token punctuation">(</span>resources<span class="token punctuation">,</span> <span class="token string">"/WEB-INF/classes"</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">"target/classes"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getAbsolutePath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ctx<span class="token punctuation">.</span><span class="token function">setResources</span><span class="token punctuation">(</span>resources<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        tomcat<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        tomcat<span class="token punctuation">.</span><span class="token function">getServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">await</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这样，我们直接运行main()方法，即可启动嵌入式Tomcat服务器，然后，通过预设的<font color="orange">tomcat.addWebapp(“”, new File(“src/main/webapp”)</font>，Tomcat会自动加载当前工程作为根webapp，整个过程就是一个普通的Java程序，在IDE环境中启动和调试，并不需要任何插件，甚至连本地安装Tomcat的步骤都省了。</p>
+<p>通过main()方法启动Tomcat服务器并加载我们自己的webapp有如下好处：</p>
 <ul>
-<li><p>具体操作步骤：对象存储—空间管理-空间名称“XXX”-绑定加速域名-输入域名相关信息</p>
-</li>
-<li><p><img src="http://cdn.lyhzone.com/article_img/20200422132713.png" alt=""></p>
-</li>
-<li><p>加速域名写你的顶级域名的任意二级域名，如XXX.XXX.com</p>
-</li>
-<li><p>通信协议选择HTTP,覆盖范围中国大陆，使用场景图片小文件，最后的缓存配置选推荐</p>
-</li>
-<li><p>创建完成，得到加速域名的cname，返回域名服务提供商，进行cname解析，以我的阿里云域名解析为例，这里应该是</p>
-</li>
-<li><p><img src="http://cdn.lyhzone.com/article_img/20200422133216.png" alt=""></p>
-</li>
-<li><p>具体设置<img src="http://cdn.lyhzone.com/article_img/20200422133335.png" alt=""></p>
-</li>
-<li><p>填写教程：记录类型-CNAME 主机记录-二级域名的前缀 解析线路-默认 记录值-七牛云给出的CNAME</p>
-</li>
-<li><p>保存完后需要过一段时间才能成功，你可以在七牛云的界面上监控状态。</p>
-</li>
-</ul>
-<h2 id="3-源站域名加速"><a href="#3-源站域名加速" class="headerlink" title="3.源站域名加速"></a>3.源站域名加速</h2><ul>
-<li><p>打开七牛的控制台，选择融合CDN模块，点添加域名</p>
-</li>
-<li><p>填写方法如上，只有<font color="orange">源站配置</font>之后需要更改</p>
-</li>
-<li><p>源站配置选择源站域名，源站域名就填pages服务要求您绑定的CNAME地址。比如gihub.io,coding.me，回源为你的二级加速域名</p>
-</li>
-<li><p><img src="http://cdn.lyhzone.com/article_img/20200422134000.png" alt=""></p>
-</li>
-<li><p>源站测试方法为在你的博客根目录下的source文件夹里创建一个text.txt文件，内容为test（随意，越短越好）</p>
-</li>
-<li><p>接下来在博客文件夹目录下git bath here </p>
-<pre class="line-numbers language-java"><code class="language-java">hexo clean
-hexo g
-hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>源站测试，填入text.txt,点击测试，通过，完成。</p>
-</li>
-</ul>
-<h1 id="基于云存储和picgo，深度优化图片加载速度"><a href="#基于云存储和picgo，深度优化图片加载速度" class="headerlink" title="基于云存储和picgo，深度优化图片加载速度"></a>基于云存储和picgo，深度优化图片加载速度</h1><ul>
-<li>CDN的特性决定了有时候你更新的文章以及图片无法及时抓取更新，尤其是当你新发布的文章包含了大量图片的时候，更新不及时是种很糟糕的体验。</li>
-</ul>
-<p><strong>So以七牛的云存储和Picgo程序为例，我们来尝试一下图片的快速上传及读取</strong></p>
-<ul>
-<li><p>在七牛云的空间/文件管理/中，有提供限制存储空间及流量的有限云存储服务（类似百度云网盘）。通过Picgo我们可以达到快速地上传图片并生成外链置入Markdown中，这样我们无论写文章还是用户读文章，体验都是很优秀的。</p>
-</li>
-<li><p>在<font color="orange">空间已绑定域名</font>之后，下载picgo</p>
-</li>
-<li><p>picgo的github开源链接：<a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">picgo</a></p>
-</li>
-<li><p>下载并安装完毕后，进入picgo-七牛图床设置-填入<font color="orange">AK和SK</font>（<font color="orange">公有密钥</font>和<font color="orange">私有密钥</font>）</p>
-</li>
-<li><p>AK和SK从你的 七牛云空间-个人密钥管理 获得，以我的为例<br><img src="http://cdn.lyhzone.com/article_img/20200422154957.png" alt="密钥获得"></p>
-</li>
+<li>启动简单，无需下载Tomcat或安装任何IDE插件；</li>
+<li>调试方便，可在IDE中使用断点调试；</li>
+<li>使用Maven创建war包后，也可以正常部署到独立的Tomcat服务器中。</li>
 </ul>
 <hr>
-<ul>
-<li>大功告成，现在你就可以使用Picgo和云存储的组合在markdown上快速写文章、上传图片了，访问自己的博客网站读取图片也不会过于缓慢了！</li>
-</ul>
+<p>对SpringBoot有所了解的童鞋可能知道，SpringBoot也支持在main()方法中一行代码直接启动Tomcat，并且还能方便地更换成Jetty等其他服务器。它的启动方式和我们介绍的是基本一样的，可见，编写几行样板代码直接启动整个服务器+webapp是多么方便。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -775,7 +741,7 @@ hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     </span>
                     <a href="https://lyhzone.com" class="b-link-green">雨晖の小站</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/04/22/cdn/" class="b-link-green">使用CDN与云存储加速网站静态资源读取的方法</a>
+                    <a href="/2020/04/24/tomcat/" class="b-link-green">java web中tomcat在本地的函数式部署</a>
                 </p>
             </div>
 
@@ -1095,9 +1061,10 @@ hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/04/24/tomcat/">
                     <div class="card-image">
@@ -1115,9 +1082,9 @@ hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1130,6 +1097,7 @@ hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1148,31 +1116,31 @@ hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/21/idea/">
+                <a href="/2020/04/22/cdn/">
                     <div class="card-image">
                         
                         
-                        <img src="http://cdn.lyhzone.com/medias/featureimages/8.jpg" class="responsive-img" alt="最现代的Java IDE——IntelliJ IDEA使用入门">
+                        <img src="http://cdn.lyhzone.com/medias/featureimages/3.jpg" class="responsive-img" alt="使用CDN与云存储加速网站静态资源读取的方法">
                         
-                        <span class="card-title">最现代的Java IDE——IntelliJ IDEA使用入门</span>
+                        <span class="card-title">使用CDN与云存储加速网站静态资源读取的方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JavaCodeGeeks曾在2016的统计显示，IntelliJ用户量已经超过Eclipse。在实际的项目开发、管理中，日常的教程、学习里，IDEA都已经成为目前最主流的JAVA IDE。乃至包括Google也选择在IDEA上二次开发了Android studio等环境。本篇文章将会从IDEA的下载、安装开始，到IDEA特殊的edu激活结束。
+                            个人博客域名部署在阿里云服务器上，由于是用Hexo搭的博客，编译出来的都是纯静态资源，一旦涉及到图片的加载就会十分缓慢。尽管图片已经压缩并且启用了惰性加载lazyload的特性，优化还是不尽如人意，最终我选择了加上七牛云的CDN和云存储的双重加速。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-21
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/软件程序/" class="post-category" target="_blank">
-                                    软件程序
+                            <a href="/categories/web开发/" class="post-category" target="_blank">
+                                    web开发
                                 </a>
                             
                             
@@ -1182,16 +1150,8 @@ hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/eclipse/" target="_blank">
-                        <span class="chip bg-color">eclipse</span>
-                    </a>
-                    
-                    <a href="/tags/IDEA/" target="_blank">
-                        <span class="chip bg-color">IDEA</span>
-                    </a>
-                    
-                    <a href="/tags/IDE/" target="_blank">
-                        <span class="chip bg-color">IDE</span>
+                    <a href="/tags/web-CDN-云存储/" target="_blank">
+                        <span class="chip bg-color">web CDN 云存储</span>
                     </a>
                     
                 </div>

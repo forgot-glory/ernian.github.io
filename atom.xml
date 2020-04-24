@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lyhzone.com/"/>
-  <updated>2020-04-22T07:50:23.180Z</updated>
+  <updated>2020-04-24T12:21:59.301Z</updated>
   <id>https://lyhzone.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java web中tomcat在本地的函数式部署</title>
+    <link href="https://lyhzone.com/2020/04/24/tomcat/"/>
+    <id>https://lyhzone.com/2020/04/24/tomcat/</id>
+    <published>2020-04-24T12:11:05.000Z</published>
+    <updated>2020-04-24T12:21:59.301Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;很多童鞋在开发应用程序的时候，对IDE的要求很高，而且喜欢折腾各种插件。&lt;/p&gt;
+&lt;p&gt;以Java Web开发为例，大家都知道，开发Java
+        
+      
+    
+    </summary>
+    
+      <category term="web开发" scheme="https://lyhzone.com/categories/web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Javaweb webapp tomcat" scheme="https://lyhzone.com/tags/Javaweb-webapp-tomcat/"/>
+    
+  </entry>
   
   <entry>
     <title>使用CDN与云存储加速网站静态资源读取的方法</title>
