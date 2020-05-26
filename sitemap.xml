@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lyhzone.com/2020/04/22/cdn/</loc>
+    
+    <lastmod>2020-04-24T13:49:13.349Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lyhzone.com/2020/04/21/idea/</loc>
     
     <lastmod>2020-04-24T13:45:18.999Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://lyhzone.com/2020/04/24/tomcat/</loc>
     
     <lastmod>2020-04-24T13:45:17.018Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lyhzone.com/2020/04/22/cdn/</loc>
-    
-    <lastmod>2020-04-24T13:45:08.836Z</lastmod>
     
   </url>
   
@@ -79,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://lyhzone.com/categories/index.html</loc>
-    
-    <lastmod>2019-10-04T03:57:55.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lyhzone.com/contact/index.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
@@ -93,7 +86,7 @@
   </url>
   
   <url>
-    <loc>https://lyhzone.com/friends/index.html</loc>
+    <loc>https://lyhzone.com/categories/index.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
     
@@ -101,6 +94,13 @@
   
   <url>
     <loc>https://lyhzone.com/tags/index.html</loc>
+    
+    <lastmod>2019-10-04T03:57:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lyhzone.com/friends/index.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
     
